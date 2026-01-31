@@ -187,30 +187,21 @@
           </div>
           <div class="col-md-9">
             <p style="font-size: 20px; margin-bottom: 20px; text-align: justify;">
-              <strong>Motivation.</strong> AI Agents empowered by Large Language Models (LLMs) have shown advanced
-              automation capabilities in executing complex tasks. With the rapid advancement in LLMs'
-              reasoning abilities, AI agents have proven successful in diverse applications such as coding.
-              Recently, Multimodal Foundation Models (MFMs) have emerged as a cutting-edge frontier in
-              artificial intelligence, demonstrating remarkable potential to enhance cognitive and perceptual
-              capabilities in AI Agents. Recent breakthroughs reveal that models integrating visual, textual,
-              and auditory inputs enable fine-grained cross-modal reasoning. These systems excel at parsing
-              complex scenarios, generating context-aware descriptions, and tackling tasks requiring
-              synergistic perception and language understanding—capabilities critical to robotics,
-              human-computer interaction, and beyond. Here, we propose empowering AI agents to operate
-              in multimodal scenarios by leveraging MFMs' advanced multimodal reasoning capabilities.
+              <strong>Motivation.</strong> Artificial Intelligence (AI) agents powered by Large Language Models (LLMs) have demonstrated advanced capabilities in automating complex tasks. With the rapid evolution of LLMs’ reasoning abilities, such agents have achieved notable success in a variety of domains, including software development and robotics. More recently, the emergence of Multimodal Foundation Models (MFMs) marks a significant advancement in artificial intelligence. These models integrate multiple sensory modalities—such as vision, language, and audio—to substantially enhance the cognitive and perceptual capabilities of AI agents.
+              Recent breakthroughs reveal that MFMs enable fine-grained cross-modal reasoning by jointly processing visual, textual, and auditory data. These systems excel at parsing complex scenarios, generating context-aware descriptions, and tackling tasks requiring synergistic perception and language understanding—capabilities critical to robotics, human-computer interaction, and beyond. Thus, this workshop aims to explore how AI agents can be further empowered through MFMs to operate effectively in multimodal environments.
             </p>
             <p style="font-size: 20px; margin-bottom: 20px; text-align: justify;">
-              <strong>Background & Application.</strong> Recent AI agents have revealed their potential in solving more complex problems under multimodal settings. For example, OS-Copilot is ready to interact with computer OS like a human, such as web browsing, coding, and using third-party applications. Another trending AI agent application is the AI Scientist Agent for research automation, such as designing and running experiments. Nevertheless, existing AI Scientist Agents typically rely on textual input, and the informative multimodal signals are often overlooked. Lastly, Embodied Agents represent a trending area in both research and application, where AI agents interact with the physical (or simulated) world using sensors and robotic arms.  
-              Driven by potential applications and deployment scenarios, we define four categories of multimodal AI agents: Digital Agents, Virtual Agents, Wearable Agents, and Physical Agents. Digital Agents are software-based agents that operate exclusively with digital environments where Virtual Agents exist within virtual or simulated environments, such as VR platforms.  Wearable Agents are integrated into wearable devices to provide real-time assistance and Physical Agents primarily interact with the physical world. Each category leverages multimodal reasoning—the integration and interpretation of multiple input modalities to perceive, understand, and respond effectively within their respective environments.
-              Challenges. Multimodal reasoning faces unique theoretical and technical challenges compared to unimodal approaches. First, integrating heterogeneous data (text, images, video) demands innovations in model architectures, training paradigms, and evaluation frameworks. The exponential growth in computational complexity due to multimodal data raises concerns about resource efficiency and real-time responsiveness. 
-              Second, applying these models to frontier domains—such as multi-agent collaboration, scientific discovery, and embodied intelligence systems—requires overcoming bottlenecks in cross-modal semantic understanding and knowledge transfer. Crucially, the interpretability and robustness of multimodal reasoning systems remain unresolved foundational issues, directly impacting the deployment of reliable real-world applications (e.g., scientific AI agents, bio-inspired robotics). Addressing these challenges necessitates breakthroughs in cross-modal representation alignment, dynamic attention mechanisms, and uncertainty modeling of multi-source information.
-              
-            </p>
+              <strong>Background & Application.</strong> Recent advances have demonstrated the potential of 
+              AI agents to operate in increasingly complex, multimodal settings. 
+              For instance, OS-Copilot exhibits human-like interaction capabilities 
+              with operating systems, encompassing activities such as web browsing, programming, 
+              and engaging with third-party applications. Another prominent application area involves 
+              AI Scientist Agents, designed to automate research workflows—including experiment design, 
+              execution, and analysis. However, existing 
+              implementations of such agents are often limited to processing textual inputs, thereby overlooking the rich, complementary information available from visual and auditory modalities. Lastly, Embodied Agents represent another rapidly evolving area, where AI agents interact with the physical (or simulated) world using sensors and robotic effectors. These applications exemplify the growing need for agents that can reason across modalities to achieve human-level situational awareness and actionability.
             <p style="font-size: 20px; margin-bottom: 20px; text-align: justify;">
-              <strong>Challenges.</strong> Multimodal reasoning faces unique theoretical and technical challenges compared to
-              unimodal approaches. First, integrating heterogeneous data (text, images, video) demands innovations in model
-              architectures, training paradigms, and evaluation frameworks. The exponential growth in computational complexity due
-              to multimodal data raises concerns about resource efficiency and real-time responsiveness.
+              <strong>Challenges.</strong>
+              Multimodal reasoning introduces a distinct set of theoretical and technical challenges that extend beyond those faced in unimodal contexts. First, integrating heterogeneous data (text, images, video) demands innovations in model architectures, training paradigms, and evaluation frameworks. The increased computational demands associated with processing multimodal inputs also raise concerns regarding scalability, efficiency, and real-time performance.
             </p>
             <p style="font-size: 20px; margin-bottom: 20px; text-align: justify;">
               Second, applying these models to frontier domains—such as multi-agent collaboration, scientific discovery, and
@@ -255,16 +246,15 @@
             </div>
       
             <ul style="list-style-type: disc; padding-left: 20px; font-size: 1.05em; line-height: 1.8;">
-              <li>Multimodal Alignment: semantically consistent alignment across vision, language, and audio modalities.</li>
-              <li>Multimodal Foundation Model Training: novel and efficient training paradigms for multimodal systems.</li>
-              <li>Multimodal Reasoning: quantifying and enhancing the causal reasoning capabilities of multimodal foundation
-                models.</li>
-              <li>Multimodal Reasoning Evaluation: novel metrics for evaluating cross-modal reasoning in open-ended scenarios.
-              </li>
-              <li>Multimodal Perceptioning: enhancing and balancing reliance on visual, audio, and other modalities in
-                reasoning.</li>
-              <li>Reducing computational demands introduced by highly redundant modalities, such as images and videos.</li>
-              <li>Multimodal signal influences on the behavior of LM-MM Agents.</li>
+              <li>How can we achieve semantically consistent alignment across vision, language, and audio modalities?</li>
+              <li>What novel training paradigms can mitigate the computational burden of multimodal systems?</li>
+              <li>What novel model architecture are effective and native modelmodal reasoners?</li>
+              <li>How do we quantify and enhance the causal reasoning capabilities of multimodal foundation models?</li>
+              <li>Can we develop unified metrics for evaluating cross-modal reasoning in open-ended scenarios?</li>
+              <li>How can we incentivize reasoning native in multimodal representations?</li>
+              <li>How to balance the reliance on different multimodal signals for inference and reasoning,</li>
+              <li>How to reduce the computational demands introduced by highly redundant modalities, such as images and videos.</li>
+              <li>How the multimodal signal influences the behavior of the LMM Agent.</li>
             </ul>
       
             <div class="row" style="padding: 20px; border-radius: 8px;">
